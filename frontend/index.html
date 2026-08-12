@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1>TaskFlow</h1></header>
+<main>
+  <section class="task-form">
+    <h2>Add Task</h2>
+    <form id="taskForm">
+      <input id="title" placeholder="Task title" required>
+      <input id="dueDate" placeholder="Due date / phrase">
+      <select id="priority">
+        <option value="medium">Medium</option><option value="low">Low</option><option value="high">High</option>
+      </select>
+      <input id="projectId" type="number" placeholder="Project ID" value="1" required>
+      <button type="submit">Add Task</button>
+      <span id="error" role="alert"></span>
+    </form>
+  </section>
+  <section>
+    <h2>Tasks</h2>
+    <div id="taskList" class="task-list"></div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
