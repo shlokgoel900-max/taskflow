@@ -69,6 +69,8 @@ The benchmark uses the same dictionary fields used by the task endpoints and rep
 
 The implementation uses hand-written algorithms without built-in sorting or search helpers.
 
+Benchmark results are reported for 10, 500, and 3,000 records.
+
 ## Why sorting can be worthwhile
 
 Insertion sort is expensive when the list is initially unsorted, especially at larger sizes. Once a list is sorted, binary search needs logarithmic comparisons while linear search can scan the entire list. If a team repeatedly searches or views an ordered task list during the day, paying a sorting cost can be worthwhile when the sorted structure is reused. The benchmark output should be committed after running `python benchmark.py`, so the submitted README/results contain the actual raw counts from the implementation.
